@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
   basePath: isGitHubPages ? `/${GITHUB_PROJECT}` : '',
   // Why I don't use `assetPrefix`?
   // https://nextjs.org/docs/app/api-reference/config/next-config-js/assetPrefix#:~:text=an%20Asset%20Prefix.-,Good%20to%20know%3A,-Next.js%209.5
-  trailingSlash: true, 
 };
 
 export default nextConfig;
