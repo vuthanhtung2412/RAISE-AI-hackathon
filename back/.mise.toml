@@ -1,0 +1,28 @@
+[env]
+PYTHONPATH = "{{config_root}}"
+_.python.venv = { path = ".venv", create = true }
+
+[tools]
+python = "3.12"
+uv = "0.7"
+ruff = "0.11"
+
+[tasks.install]
+description = "Install dependencies"
+alias = "i"
+run = "uv pip install -r requirements.txt"
+
+[tasks.freeze]
+description = "freeze to requirements.txt"
+run = "uv pip freeze > requirements.txt"
+
+[tasks.migrate]
+description = "db migration"
+run = "python models.py"
+
+[tasks.start]
+description = "start server"
+run = "fastapi dev main.py"
+
+[settings]
+python.uv_venv_auto = true
