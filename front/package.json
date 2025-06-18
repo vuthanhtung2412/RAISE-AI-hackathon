@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "npx serve@latest out",
     "lint": "next lint",
-    "predeploy": "npm run build && npm run add:nojekyll",
+    "predeploy": "GITHUB_PAGES=true npm run build && npm run add:nojekyll",
     "deploy": "gh-pages -d out -b gh-pages -x",
     "add:nojekyll": "touch out/.nojekyll"
   },
