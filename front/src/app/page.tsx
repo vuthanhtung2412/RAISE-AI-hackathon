@@ -9,6 +9,7 @@ export default function Home() {
         {/* https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath#images */}
         <Image
           className="dark:invert"
+          // src="next.svg" // still works but relative paths are not recommended
           src={`/${GITHUB_PROJECT}/next.svg`}
           alt="Next.js logo"
           width={180}
@@ -37,7 +38,7 @@ export default function Home() {
           >
             <Image
               className="dark:invert"
-              src="/vercel.svg"
+              src="vercel.svg"
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -63,7 +64,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src="file.svg"
             alt="File icon"
             width={16}
             height={16}
@@ -78,7 +79,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -93,7 +94,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src="globe.svg"
             alt="Globe icon"
             width={16}
             height={16}
